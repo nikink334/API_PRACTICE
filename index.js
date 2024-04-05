@@ -30,11 +30,12 @@ app.get('/pasta', (req, res)=>{
 
 */
 
+
+/*
 app.get("/order-food", (req, res) => {
 
     // Query Parasm
     
-    /*
     const queryParams = req.query;
     console.log("#######");
     console.log(queryParams);
@@ -42,15 +43,14 @@ app.get("/order-food", (req, res) => {
 
     res.json({
         message: "order recived successfully"
-    })  */
+    })  
 
-    /*
     const menu = req.query.menu;
     const quantity = req.query.quantity;
 
     res.json({
         message: `You Have Ordered ${quantity} ${menu}`
-    })  */
+    })  
 
 
     const {menu, price, quantity} = req.query;
@@ -61,6 +61,7 @@ app.get("/order-food", (req, res) => {
         bill: `Your Total Bill Is ${totalPrice}`
     })
 })
+*/
 
 
 // Path
@@ -85,6 +86,28 @@ app.get("/food/:type", (req, res) => {
         message: "You Have Orderd Food"
     })
 })
+
+
+// Headers
+/*
+app.get("/order-food", (req, res) => {
+
+    console.log(`Headers: ` , req.headers)
+
+    const {menu, price, quantity} = req.query;
+    const totalPrice = parseInt(price)*parseInt(quantity);
+
+    res.json({
+        message: `You Have Orderd ${quantity} ${menu}`,
+        bill: `Your Total Bill Is ${totalPrice}`
+    })
+})  */
+
+
+
+// Body
+
+
 
 
 app.listen(PORT, ()=>{
