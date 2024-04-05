@@ -1,0 +1,15 @@
+{
+  "name": "api-practice",
+  "version": "1.0.0",
+  "description": "api parctice assignment 41",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "nikita",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
