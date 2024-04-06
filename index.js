@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express();
+app.use(express.json());
 
 const PORT = 5000;
 
@@ -107,6 +108,17 @@ app.get("/order-food", (req, res) => {
 
 // Body
 
+
+app.post("/user", (req, res) => {
+
+
+    console.log(req.body);
+
+    res.json({
+
+        message: "user created"
+    })
+})
 
 
 
